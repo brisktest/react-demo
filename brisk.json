@@ -8,10 +8,10 @@
   "buildCommands": [
 
     {
-      "commandline": "nvm install 16.7"
+      "commandline": "nvm install 18.9"
     },
     {
-      "commandline": "nvm alias default 16.7 && nvm use default"
+      "commandline": "nvm alias default 18.9 && nvm use default"
     },
     {
       "commandline": "yarn"
