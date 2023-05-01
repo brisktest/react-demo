@@ -1,0 +1,43 @@
+{
+  "commands": [
+    {
+      "commandline": "FORCE_COLOR=true yarn test --silent --json "
+    }
+  ],
+
+  "buildCommands": [
+
+    {
+      "commandline": "nvm install 14.18.0"
+    },
+    {
+      "commandline": "nvm alias default 14.18.0 && nvm use default"
+    },
+    {
+      "commandline": "yarn"
+    }
+  ],
+  "concurrency": 20,
+  "excludedFromSync": [
+    "log/",
+    ".git/",
+    "node_modules",
+    ".rvm",
+    ".powenv"
+  ],
+  "excludedFromWatch": [
+    "log/",
+    ".git/",
+    "log",
+    ".git",
+    "node_modules"
+  ],
+  "projectToken": "85nXR0435e",
+  "framework": "Jest",
+  "listTestCommand": "yarn -s test --silent --listTests --json ",
+  "environment": {
+  },
+  "image": "node-lts",
+  "rebuildFilePaths": ["package.json"],
+  "automaticSplitting": true
+}

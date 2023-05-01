@@ -1,0 +1,24 @@
+name: Brisk Uptime Monitoring
+on:
+  schedule:
+  - cron: "*/5 * * * *"
+jobs:
+  Brisk-CI:
+    runs-on: ubuntu-latest
+    timeout-minutes: 9
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+      - name: Install Brisk
+        uses: brisktest/setup-brisk@v1.1
+        with:
+          brisk_version: 'latest'
+          api_token: '${{ secrets.BRISK_APITOKEN }}'
+          api_key: '${{ secrets.BRISK_APIKEY }}'
+          config_file: 'brisk.json'
+      - name: Version
+        run: brisk version          
+      - name: Run Brisk
+        timeout-minutes: 9
+        run: brisk 
+              
