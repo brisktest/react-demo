@@ -1,4 +1,4 @@
-name: Brisk Uptime Monitoring
+name: Brisk
 on:
   schedule:
   - cron: "*/5 * * * *"
