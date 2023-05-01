@@ -32,7 +32,7 @@
     ".git",
     "node_modules"
   ],
-  "projectToken": "85nXR0435e",
+  "projectToken": "LJa6IoUy9r",
   "framework": "Jest",
   "listTestCommand": "yarn -s test --silent --listTests --json ",
   "environment": {
