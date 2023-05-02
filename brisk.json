@@ -17,7 +17,7 @@
       "commandline": "yarn"
     }
   ],
-  "concurrency": 40,
+  "concurrency": 60,
   "excludedFromSync": [
     "log/",
     ".git/",
