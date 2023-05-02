@@ -39,5 +39,5 @@
   },
   "image": "node-lts",
   "rebuildFilePaths": ["package.json"],
-  "automaticSplitting": true
+  "automaticSplitting": false
 }
